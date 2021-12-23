@@ -35,6 +35,7 @@ public class Hit : MonoBehaviour
                     AudioSource.PlayClipAtPoint(audioClip, transform.position);
                 }
             }
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
