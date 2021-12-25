@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - GoodCar
+  - BadCar
+  - Garbage
   layers:
   - Default
   - TransparentFX

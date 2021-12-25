@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class Hit : MonoBehaviour
 {
     // Start is called before the first frame update
+    private float count;
+    private float pointsCount;
+    public Text timer;
+    public Text points;
     public AudioClip audioClip;
     public GameObject explosionParticle;
     void Start()
@@ -16,13 +20,22 @@ public class Hit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        count = float.Parse(timer.text);
+        pointsCount = float.Parse(points.text);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag =="Projectile")
         {
+            if (gameObject.tag == "GoodCar")
+            {
+                timer.text = (count + 10).ToString();
+            }
+            if(gameObject.tag == "BadCar")
+            {
+                points.text = (pointsCount+1).ToString();
+            }
             Instantiate(explosionParticle, transform.position, transform.rotation);
             if (audioClip)
             {

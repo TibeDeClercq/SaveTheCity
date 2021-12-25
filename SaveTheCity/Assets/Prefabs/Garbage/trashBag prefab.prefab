@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2423252876714744457}
   - component: {fileID: 2423252876714744455}
-  - component: {fileID: 2423252876714744456}
   m_Layer: 0
   m_Name: trashBag prefab
-  m_TagString: Untagged
+  m_TagString: Garbage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,18 +45,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2423252876714744456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423252876714744458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f715efa9799e146478b4862d809b1387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2423252877314685863
 GameObject:
   m_ObjectHideFlags: 0
