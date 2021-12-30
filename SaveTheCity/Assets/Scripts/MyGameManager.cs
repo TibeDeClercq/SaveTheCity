@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class MyGameManager : MonoBehaviour
 {
@@ -38,6 +39,10 @@ public class MyGameManager : MonoBehaviour
             case GameStates.Playing:
                 if (count >= endTimer)
                 {
+                    Destroy(Player.GetComponent<Shoot>());
+                    //Player.GetComponent<FirstPersonController>().enabled = false;
+                    //Player.GetComponent<CreateCamera>().enabled = true;
+                    FirstPersonController.isWalking = false;
                     gameState = GameStates.Gameover;
                     mainCanvas.SetActive(false);
                     gameOverCanvas.SetActive(true);
