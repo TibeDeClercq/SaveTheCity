@@ -21,7 +21,7 @@ public class CarbageDestroy : MonoBehaviour
     {
         if (other.gameObject.tag == "Garbage")
         {
-            Timer.TimerValue += 10;
+            Timer.TimerValue += 5;
             Destroy(other.gameObject);
         }
     }
