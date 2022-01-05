@@ -53,8 +53,6 @@ public class SpeedPowerup : MonoBehaviour {
 			RemoveSpeed();
 			Destroy(gameObject);
 		}
-
-		Debug.Log($"Player speed: {FirstPersonController.RunSpeed}");
 	}
 
 	void OnTriggerEnter(Collider other)
