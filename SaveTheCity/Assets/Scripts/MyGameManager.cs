@@ -45,22 +45,30 @@ public class MyGameManager : MonoBehaviour
                 if(points >= MaxPoints)
                 {
                     Destroy(Player.GetComponent<Shoot>());
-                    //Player.GetComponent<FirstPersonController>().enabled = false;
+                    Player.GetComponent<CharacterController>().enabled = false;
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    Player.GetComponent<FirstPersonController>().enabled = false;
                     //Player.GetComponent<CreateCamera>().enabled = true;
                     FirstPersonController.isWalking = false;
                     gameState = GameStates.Victory;
                 }
                 break;
             case GameStates.Gameover:
+                
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(true);
                 Destroy(Player.GetComponent<Shoot>());
-                //Player.GetComponent<FirstPersonController>().enabled = false;
+                Player.GetComponent<CharacterController>().enabled = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                Player.GetComponent<FirstPersonController>().enabled = false;
                 //Player.GetComponent<CreateCamera>().enabled = true;
                 FirstPersonController.isWalking = false;
                 break;
             case GameStates.Victory:
+                Cursor.visible = true;
                 MyGameManager.points = 0;
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(true);

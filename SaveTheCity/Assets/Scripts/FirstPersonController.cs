@@ -42,9 +42,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+
         public static bool isWalking;
         public static float WalkSpeed = 5;
         public static float RunSpeed = 10;
+        public static bool LockCursor = true;
 
         // Use this for initialization
         private void Start()
@@ -69,6 +71,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            m_MouseLook.lockCursor = LockCursor; //GUI fix
+            m_MouseLook.UpdateCursorLock();
+
             if (isWalking)
             {
                 RotateView();
@@ -152,8 +157,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
-
-            m_MouseLook.UpdateCursorLock();
         }
 
 
