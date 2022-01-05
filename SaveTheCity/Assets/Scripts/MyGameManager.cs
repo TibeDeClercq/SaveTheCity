@@ -10,20 +10,18 @@ public class MyGameManager : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject gameOverCanvas;
     public GameObject victoryCanvas;
-    public float endTimer;
-    public Text timer;
-    public Text pointsTimer;
-    public float cars;
-    private float count;
-    private float points;
+
+    public Text PointsText;
+    public float MaxPoints;
+    public static float points;
     
 
-    public enum GameStates
+    public enum GameStates //pauze toevoegen
     {
         Playing, Gameover, Victory
     }
 
-    public GameStates gameState = GameStates.Playing;
+    public static GameStates gameState;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,40 +29,42 @@ public class MyGameManager : MonoBehaviour
         {
             Player = GameObject.FindWithTag("Player");
         }
-        mainCanvas.SetActive(true);
-        victoryCanvas.SetActive(false);
-        gameOverCanvas.SetActive(false);
-        
+        MyGameManager.gameState = GameStates.Playing;
     }
 
     // Update is called once per frame
     void Update()
     {
-        points = float.Parse(pointsTimer.text);
-        count = float.Parse(timer.text);
         switch (gameState)
         {
             case GameStates.Playing:
-                if (count >= endTimer)
-                {
-                    Destroy(Player.GetComponent<Shoot>());
-                    //Player.GetComponent<FirstPersonController>().enabled = false;
-                    //Player.GetComponent<CreateCamera>().enabled = true;
-                    FirstPersonController.isWalking = false;
-                    gameState = GameStates.Gameover;
-                    mainCanvas.SetActive(false);
-                    gameOverCanvas.SetActive(true);
-                }
-                if(points >= cars)
+                mainCanvas.SetActive(true);
+                victoryCanvas.SetActive(false);
+                gameOverCanvas.SetActive(false);
+                this.PointsText.text = MyGameManager.points.ToString();
+                if(points >= MaxPoints)
                 {
                     Destroy(Player.GetComponent<Shoot>());
                     //Player.GetComponent<FirstPersonController>().enabled = false;
                     //Player.GetComponent<CreateCamera>().enabled = true;
                     FirstPersonController.isWalking = false;
                     gameState = GameStates.Victory;
-                    mainCanvas.SetActive(false);
-                    victoryCanvas.SetActive(true);
                 }
+                break;
+            case GameStates.Gameover:
+                mainCanvas.SetActive(false);
+                victoryCanvas.SetActive(false);
+                gameOverCanvas.SetActive(true);
+                Destroy(Player.GetComponent<Shoot>());
+                //Player.GetComponent<FirstPersonController>().enabled = false;
+                //Player.GetComponent<CreateCamera>().enabled = true;
+                FirstPersonController.isWalking = false;
+                break;
+            case GameStates.Victory:
+                MyGameManager.points = 0;
+                mainCanvas.SetActive(false);
+                victoryCanvas.SetActive(true);
+                gameOverCanvas.SetActive(false);
                 break;
         }
     }
