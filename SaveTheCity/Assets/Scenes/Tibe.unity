@@ -2449,6 +2449,10 @@ PrefabInstance:
       propertyPath: circuit
       value: 
       objectReference: {fileID: 1854725003}
+    - target: {fileID: 1134239990, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1854725003}
     - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_Name
       value: Car_1_1
@@ -8693,6 +8697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144352124}
     m_Modifications:
+    - target: {fileID: 131878228, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 335341099}
     - target: {fileID: 774982044, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: circuit
       value: 
@@ -29448,6 +29456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 767160806, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 564025919}
     - target: {fileID: 916689199, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
       propertyPath: circuit
       value: 
@@ -34734,6 +34746,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1144352124}
     m_Modifications:
     - target: {fileID: 263069432, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 842258928}
+    - target: {fileID: 1294310470, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: circuit
       value: 
       objectReference: {fileID: 842258928}
@@ -51706,6 +51722,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
     - target: {fileID: 1741148845, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1810798369}
+    - target: {fileID: 1927788546, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
       propertyPath: circuit
       value: 
       objectReference: {fileID: 1810798369}
