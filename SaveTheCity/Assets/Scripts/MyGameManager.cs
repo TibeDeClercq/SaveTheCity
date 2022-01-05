@@ -44,10 +44,6 @@ public class MyGameManager : MonoBehaviour
                 this.PointsText.text = MyGameManager.points.ToString();
                 if(points >= MaxPoints)
                 {
-                    Destroy(Player.GetComponent<Shoot>());
-                    //Player.GetComponent<FirstPersonController>().enabled = false;
-                    //Player.GetComponent<CreateCamera>().enabled = true;
-                    FirstPersonController.isWalking = false;
                     gameState = GameStates.Victory;
                 }
                 break;
@@ -61,6 +57,10 @@ public class MyGameManager : MonoBehaviour
                 FirstPersonController.isWalking = false;
                 break;
             case GameStates.Victory:
+                Destroy(Player.GetComponent<Shoot>());
+                //Player.GetComponent<FirstPersonController>().enabled = false;
+                //Player.GetComponent<CreateCamera>().enabled = true;
+                FirstPersonController.isWalking = false;
                 MyGameManager.points = 0;
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(true);

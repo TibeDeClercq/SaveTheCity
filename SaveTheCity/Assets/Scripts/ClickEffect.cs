@@ -22,7 +22,7 @@ public class ClickEffect : MonoBehaviour
             float y = this.gameObject.transform.position.y;
             float xMouse = Input.mousePosition.x;
             float yMouse = Input.mousePosition.y;
-            if(xMouse > x-80 && xMouse < x+80 && yMouse > y-15 && yMouse < y+15)
+            if(xMouse > x-70 && xMouse < x+70 && yMouse > y-15 && yMouse < y+15)
                 SceneManager.LoadScene(this.name);
         }
     }
