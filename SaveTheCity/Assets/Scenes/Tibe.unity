@@ -1775,10 +1775,10 @@ PrefabInstance:
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 1303696133}
+      objectReference: {fileID: 925108758}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: MaxPoints
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: PointsText
@@ -2358,6 +2358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
+      propertyPath: m_TagString
+      value: BadCar
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2489,6 +2493,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: m_Name
       value: Car_3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: m_TagString
+      value: GoodCar
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: m_RootOrder
@@ -26429,6 +26437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_4_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
+      propertyPath: m_TagString
+      value: BadCar
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -27498,7 +27510,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 682931964, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
       propertyPath: StartTime
-      value: 10
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1869082317, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
       propertyPath: m_RootOrder
@@ -27993,7 +28005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_TagString
-      value: BadCar
+      value: GoodCar
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_RootOrder
@@ -28954,6 +28966,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Projectile: {fileID: 6410485740802191329, guid: a28796704645dea4e963b75f99c60e4f, type: 3}
   shootRate: 3
+--- !u!114 &925108765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925108758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f715efa9799e146478b4862d809b1387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &925551873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32778,6 +32802,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_Name
       value: Car_3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
+      propertyPath: m_TagString
+      value: BadCar
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_RootOrder
@@ -39148,6 +39176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_3_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: m_TagString
+      value: BadCar
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -39400,11 +39432,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
---- !u!1 &1303696133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-  m_PrefabInstance: {fileID: 1303696132}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1304467010
 GameObject:
   m_ObjectHideFlags: 0
@@ -53840,6 +53867,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
       propertyPath: m_Name
       value: Car_4_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
+      propertyPath: m_TagString
+      value: GoodCar
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
       propertyPath: m_RootOrder
