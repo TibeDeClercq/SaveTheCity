@@ -33,7 +33,7 @@ public class SpeedPowerup : MonoBehaviour {
 	{		
 		transform.Rotate (Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
 
-		if (PickUp && powerupDuration > Timer)
+		if (PickUp && powerupDuration > Timer && MyGameManager.gameState != MyGameManager.GameStates.Pause)
         {
 			if (checkOn)
             {
