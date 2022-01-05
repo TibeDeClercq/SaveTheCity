@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileTIme : MonoBehaviour
+public class ProjectileTime : MonoBehaviour
 {
     float timer = 0;
-    float lifeTime = 3f;
+    float lifeTime = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +22,13 @@ public class ProjectileTIme : MonoBehaviour
         }
         else
             Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(timer > 0.1f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
