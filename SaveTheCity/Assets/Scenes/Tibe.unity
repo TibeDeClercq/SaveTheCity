@@ -1778,7 +1778,7 @@ PrefabInstance:
       objectReference: {fileID: 1303696133}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: MaxPoints
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: PointsText
@@ -2350,6 +2350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144352124}
     m_Modifications:
+    - target: {fileID: 677037560, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1854725003}
     - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_Name
       value: Car_1_1
@@ -2478,6 +2482,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075245792}
     m_Modifications:
+    - target: {fileID: 131878228, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 823229781}
     - target: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: m_Name
       value: Car_3_2
@@ -2533,31 +2541,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
   m_PrefabInstance: {fileID: 131878225}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &131878227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
-  m_PrefabInstance: {fileID: 131878225}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &131878228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131878227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 823229781}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 131878226}
 --- !u!1 &132544036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,6 +3720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144352124}
     m_Modifications:
+    - target: {fileID: 774982044, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 335341099}
     - target: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: m_Name
       value: Car_1_2
@@ -4360,31 +4347,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4088839632586982, guid: 3744e668ae9047e4b9590c326355161c, type: 3}
   m_PrefabInstance: {fileID: 256680635}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &263069431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
-  m_PrefabInstance: {fileID: 1237943506}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &263069432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263069431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 842258928}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 1237943507}
 --- !u!1001 &264469819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6776,6 +6738,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 131878228, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 678821334}
+    - target: {fileID: 430398042, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 678821334}
     - target: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
       propertyPath: m_Name
       value: Car_2_3
@@ -6831,31 +6801,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
   m_PrefabInstance: {fileID: 430398039}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &430398041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
-  m_PrefabInstance: {fileID: 430398039}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &430398042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430398041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 678821334}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 430398040}
 --- !u!1001 &432058253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10374,31 +10319,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4588435873696250, guid: effb1b31d7e11a54e9b051312c1a2ee4, type: 3}
   m_PrefabInstance: {fileID: 672555592}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &677037559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
-  m_PrefabInstance: {fileID: 126941799}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &677037560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677037559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 1854725003}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 126941800}
 --- !u!1 &678821332
 GameObject:
   m_ObjectHideFlags: 0
@@ -12081,6 +12001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 309489074}
     m_Modifications:
+    - target: {fileID: 767160806, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1873660728}
     - target: {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
       propertyPath: m_Name
       value: Car_4_2
@@ -12136,31 +12060,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
   m_PrefabInstance: {fileID: 767160803}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &767160805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
-  m_PrefabInstance: {fileID: 767160803}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &767160806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767160805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 1873660728}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 767160804}
 --- !u!114 &771448214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1491071405322474635, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
@@ -12334,31 +12233,6 @@ Transform:
   m_Father: {fileID: 1810798368}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &774982043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: ab26596a331d7ee43a3e9d29e2be9f84, type: 3}
-  m_PrefabInstance: {fileID: 221300021}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &774982044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774982043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 335341099}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 221300022}
 --- !u!1 &782097670
 GameObject:
   m_ObjectHideFlags: 0
@@ -13132,6 +13006,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 844480091, guid: 512151c1530b99343a884b12ee9c5e1e, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1212657304}
     - target: {fileID: 1646981259178978, guid: 512151c1530b99343a884b12ee9c5e1e, type: 3}
       propertyPath: m_Name
       value: Car_2_2
@@ -13187,31 +13065,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 512151c1530b99343a884b12ee9c5e1e, type: 3}
   m_PrefabInstance: {fileID: 844480088}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &844480090 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 512151c1530b99343a884b12ee9c5e1e, type: 3}
-  m_PrefabInstance: {fileID: 844480088}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &844480091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844480090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 1212657304}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 844480089}
 --- !u!1001 &845315970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13219,6 +13072,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 619304399}
     m_Modifications:
+    - target: {fileID: 682931964, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
+      propertyPath: StartTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1491071405541626138, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13694,6 +13551,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 873338455, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 2142036996}
+    - target: {fileID: 1294310470, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 2142036996}
     - target: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_Name
       value: Car_2_5
@@ -13749,31 +13614,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
   m_PrefabInstance: {fileID: 873338452}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &873338454 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
-  m_PrefabInstance: {fileID: 873338452}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &873338455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873338454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 2142036996}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 873338453}
 --- !u!1001 &876352503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14600,6 +14440,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 916689199, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 564025919}
     - target: {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
       propertyPath: m_Name
       value: Car_2_1
@@ -14655,31 +14499,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
   m_PrefabInstance: {fileID: 916689196}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &916689198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
-  m_PrefabInstance: {fileID: 916689196}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &916689199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916689198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 564025919}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 916689197}
 --- !u!1 &925108758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -14939,6 +14758,81 @@ Transform:
   m_Father: {fileID: 2128959311}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &932107277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932107278}
+  - component: {fileID: 932107280}
+  - component: {fileID: 932107279}
+  m_Layer: 5
+  m_Name: Crosshair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &932107278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932107277}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.41666722, y: 0.41666722, z: 0.41666722}
+  m_Children: []
+  m_Father: {fileID: 845315971}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.000030517578}
+  m_SizeDelta: {x: 5.3, y: 5.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &932107279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932107277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4a2516fdcb87f8343aa97118a04abcfd, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &932107280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932107277}
+  m_CullTransparentMesh: 1
 --- !u!1001 &933103956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18441,6 +18335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075245792}
     m_Modifications:
+    - target: {fileID: 1134239990, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 2128959310}
     - target: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
       propertyPath: m_Name
       value: Car_3_1
@@ -18496,31 +18394,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
   m_PrefabInstance: {fileID: 1134239987}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1134239989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: f463242ba59e68243b7a693d4f0cfc18, type: 3}
-  m_PrefabInstance: {fileID: 1134239987}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1134239990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134239989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 2128959310}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 1134239988}
 --- !u!1001 &1135781538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19473,6 +19346,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144352124}
     m_Modifications:
+    - target: {fileID: 263069432, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 842258928}
     - target: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_Name
       value: Car_1_3
@@ -20019,6 +19896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075245792}
     m_Modifications:
+    - target: {fileID: 1294310470, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1311305023}
     - target: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
       propertyPath: m_Name
       value: Car_3_3
@@ -20074,31 +19955,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
   m_PrefabInstance: {fileID: 1294310467}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1294310469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
-  m_PrefabInstance: {fileID: 1294310467}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1294310470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294310469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 1311305023}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 1294310468}
 --- !u!1001 &1294761510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26541,6 +26397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1478987722}
     m_Modifications:
+    - target: {fileID: 1741148845, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 1810798369}
     - target: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
       propertyPath: m_Name
       value: Car_2_4
@@ -26596,31 +26456,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
   m_PrefabInstance: {fileID: 1741148842}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1741148844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
-  m_PrefabInstance: {fileID: 1741148842}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1741148845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741148844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 1810798369}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 1741148843}
 --- !u!1 &1755537023
 GameObject:
   m_ObjectHideFlags: 0
@@ -29946,6 +29781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 309489074}
     m_Modifications:
+    - target: {fileID: 1927788546, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
+      propertyPath: circuit
+      value: 
+      objectReference: {fileID: 2098508500}
     - target: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
       propertyPath: m_Name
       value: Car_4_1
@@ -30001,31 +29840,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
   m_PrefabInstance: {fileID: 1927788543}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1927788545 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 50477af197889084e8a6d97f2b73b73b, type: 3}
-  m_PrefabInstance: {fileID: 1927788543}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1927788546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927788545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb22d331ef7d64796f917c6a455a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circuit: {fileID: 2098508500}
-  lookAheadForTargetOffset: 0.2
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
-  progressStyle: 0
-  pointToPointThreshold: 4
-  target: {fileID: 1927788544}
 --- !u!1001 &1933377901
 PrefabInstance:
   m_ObjectHideFlags: 0
