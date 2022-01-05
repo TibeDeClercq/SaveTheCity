@@ -55,7 +55,7 @@ public class MyGameManager : MonoBehaviour
                 }
                 break;
             case GameStates.Gameover:
-                
+                Debug.Log("Changed to gameover state");
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(true);
