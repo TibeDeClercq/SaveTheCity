@@ -25,7 +25,7 @@ public class Hit : MonoBehaviour
         {
             if (gameObject.tag == "GoodCar")
             {
-                Timer.TimerValue -= 10;
+                Timer.TimerValue -= 30;
             }
             if(gameObject.tag == "BadCar")
             {
