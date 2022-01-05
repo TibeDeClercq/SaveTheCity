@@ -40,6 +40,7 @@ public class MyGameManager : MonoBehaviour
         switch (gameState)
         {
             case GameStates.Playing:
+                Timer.IsActive = true;
                 mainCanvas.SetActive(true);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(false);
