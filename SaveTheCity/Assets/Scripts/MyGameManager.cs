@@ -18,12 +18,12 @@ public class MyGameManager : MonoBehaviour
     private float points;
     
 
-    public enum GameStates
+    public enum GameStates //pauze toevoegen
     {
         Playing, Gameover, Victory
     }
 
-    public GameStates gameState = GameStates.Playing;
+    public static GameStates gameState = GameStates.Playing;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +45,7 @@ public class MyGameManager : MonoBehaviour
         switch (gameState)
         {
             case GameStates.Playing:
-                if (count >= endTimer)
+                if (count >= endTimer) //aanpassen timer
                 {
                     Destroy(Player.GetComponent<Shoot>());
                     //Player.GetComponent<FirstPersonController>().enabled = false;

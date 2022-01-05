@@ -30,7 +30,7 @@ public class Hit : MonoBehaviour
         {
             if (gameObject.tag == "GoodCar")
             {
-                timer.text = (count + 10).ToString();
+                Timer.TimerValue -= 10;
             }
             if(gameObject.tag == "BadCar")
             {
