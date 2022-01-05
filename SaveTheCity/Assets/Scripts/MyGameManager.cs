@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityStandardAssets.Utility;
 
 public class MyGameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MyGameManager : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject gameOverCanvas;
     public GameObject victoryCanvas;
+    public GameObject pauseCanvas;
 
     public Text PointsText;
     public float MaxPoints;
@@ -18,7 +20,7 @@ public class MyGameManager : MonoBehaviour
 
     public enum GameStates //pauze toevoegen
     {
-        Playing, Gameover, Victory
+        Playing, Gameover, Victory, Pause
     }
 
     public static GameStates gameState;
@@ -41,8 +43,11 @@ public class MyGameManager : MonoBehaviour
                 mainCanvas.SetActive(true);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(false);
+                pauseCanvas.SetActive(false);
                 this.PointsText.text = MyGameManager.points.ToString() + "/" + this.MaxPoints.ToString();
-                if(points >= MaxPoints)
+                if (Input.GetKeyDown(KeyCode.Escape))
+                    gameState = GameStates.Pause;
+                if (points >= MaxPoints)
                 {                    
                     gameState = GameStates.Victory;
                 }
@@ -71,6 +76,17 @@ public class MyGameManager : MonoBehaviour
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(true);
                 gameOverCanvas.SetActive(false);
+                break;
+            case GameStates.Pause:
+                Player.GetComponent<CharacterController>().enabled = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                Player.GetComponent<FirstPersonController>().enabled = false;
+                FirstPersonController.isWalking = false;
+                NewWaypointProgressTracker.isDriving = false;
+                Timer.IsActive = false;
+                Player.GetComponent<Shoot>().enabled = false;
+                pauseCanvas.SetActive(true);
                 break;
         }
     }
