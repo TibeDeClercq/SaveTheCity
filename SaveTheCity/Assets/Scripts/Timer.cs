@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                //MyGameManager.gameState = MyGameManager.GameStates.Gameover;
+                MyGameManager.gameState = MyGameManager.GameStates.Gameover;
             }
         }
 
