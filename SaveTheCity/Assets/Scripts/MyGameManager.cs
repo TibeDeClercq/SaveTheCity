@@ -43,14 +43,7 @@ public class MyGameManager : MonoBehaviour
                 gameOverCanvas.SetActive(false);
                 this.PointsText.text = MyGameManager.points.ToString() + "/" + this.MaxPoints.ToString();
                 if(points >= MaxPoints)
-                {
-                    Destroy(Player.GetComponent<Shoot>());
-                    Player.GetComponent<CharacterController>().enabled = false;
-                    Cursor.visible = true;
-                    Cursor.lockState = CursorLockMode.None;
-                    Player.GetComponent<FirstPersonController>().enabled = false;
-                    //Player.GetComponent<CreateCamera>().enabled = true;
-                    FirstPersonController.isWalking = false;
+                {                    
                     gameState = GameStates.Victory;
                 }
                 break;
@@ -68,7 +61,12 @@ public class MyGameManager : MonoBehaviour
                 FirstPersonController.isWalking = false;
                 break;
             case GameStates.Victory:
+                Destroy(Player.GetComponent<Shoot>());
+                Player.GetComponent<CharacterController>().enabled = false;
                 Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                Player.GetComponent<FirstPersonController>().enabled = false;
+                FirstPersonController.isWalking = false;
                 MyGameManager.points = 0;
                 mainCanvas.SetActive(false);
                 victoryCanvas.SetActive(true);
