@@ -41,7 +41,7 @@ public class MyGameManager : MonoBehaviour
                 mainCanvas.SetActive(true);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(false);
-                this.PointsText.text = MyGameManager.points.ToString();
+                this.PointsText.text = MyGameManager.points.ToString() + "/" + this.MaxPoints.ToString();
                 if(points >= MaxPoints)
                 {
                     gameState = GameStates.Victory;
