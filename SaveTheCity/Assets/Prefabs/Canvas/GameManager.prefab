@@ -46,6 +46,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   mainCanvas: {fileID: 0}
   gameOverCanvas: {fileID: 0}
-  endTimer: 5
-  timer: {fileID: 0}
-  gameState: 0
+  victoryCanvas: {fileID: 0}
+  PointsText: {fileID: 0}
+  MaxPoints: 1
