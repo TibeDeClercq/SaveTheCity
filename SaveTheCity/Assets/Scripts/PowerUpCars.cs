@@ -16,7 +16,7 @@ public class PowerUpCars : MonoBehaviour
     private void Update()
     {
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
-        if (isTriggered)
+        if (isTriggered && MyGameManager.gameState != MyGameManager.GameStates.Pause)
         {
             NewWaypointProgressTracker.isDriving = false;
             timer += Time.deltaTime;

@@ -14,7 +14,7 @@ public class TimerPowerUp : MonoBehaviour
     private void Update()
     {
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
-        if (isTriggered)
+        if (isTriggered && MyGameManager.gameState != MyGameManager.GameStates.Pause)
         {
             Timer.IsActive = false;
             timer += Time.deltaTime;
