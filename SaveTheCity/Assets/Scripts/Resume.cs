@@ -7,31 +7,28 @@ using static MyGameManager;
 
 public class Resume : MonoBehaviour
 {
-    public GameObject Player;
+    private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Player == null)
+        {
+            Player = GameObject.FindWithTag("Player");
+        }
     }
 
     // Update is called once per frame
-    void Update()
+
+    public void LoadScene()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            float x = this.gameObject.transform.position.x;
-            float y = this.gameObject.transform.position.y;
-            float xMouse = Input.mousePosition.x;
-            float yMouse = Input.mousePosition.y;
-            if (xMouse > x - 70 && xMouse < x + 70 && yMouse > y - 15 && yMouse < y + 15)
-            {
-                MyGameManager.gameState = GameStates.Playing;
-                Timer.IsActive = true;
-                NewWaypointProgressTracker.isDriving = true;
-                FirstPersonController.isWalking = true;
-                Player.GetComponent<Shoot>().enabled = true;
-            }
-                
-        }
+        Player.GetComponent<CharacterController>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Player.GetComponent<FirstPersonController>().enabled = true;
+        MyGameManager.gameState = GameStates.Playing;
+        Timer.IsActive = true;
+        NewWaypointProgressTracker.isDriving = true;
+        FirstPersonController.isWalking = true;
+        Player.GetComponent<Shoot>().enabled = true;
     }
 }

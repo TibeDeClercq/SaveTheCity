@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1691611514010992276}
   - component: {fileID: 1691611514010992277}
   - component: {fileID: 1691611514010992282}
-  - component: {fileID: 5085794931683187954}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -121,20 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1691611514010992277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &5085794931683187954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691611514010992280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25c89da81a6b56f4d842d7a81618700f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 4611065658294753930}
+        m_TargetAssemblyTypeName: Resume, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1691611514092671477
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +145,6 @@ GameObject:
   - component: {fileID: 1691611514092671473}
   - component: {fileID: 1691611514092671478}
   - component: {fileID: 1691611514092671479}
-  - component: {fileID: 1691611514092671472}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -256,20 +253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1691611514092671478}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1691611514092671472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691611514092671477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 922e2ffe93676e84ead59976c890717c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Main_menu
+      m_Calls:
+      - m_Target: {fileID: 1691611514582393844}
+        m_TargetAssemblyTypeName: ButtonLevel, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1691611514582393850
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +370,7 @@ GameObject:
   - component: {fileID: 1691611515286225805}
   - component: {fileID: 1691611515286225806}
   - component: {fileID: 1691611515286225807}
-  - component: {fileID: 1691611515286225804}
+  - component: {fileID: 4611065658294753930}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -443,7 +439,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Resume
---- !u!114 &1691611515286225804
+--- !u!114 &4611065658294753930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -452,10 +448,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691611515286225810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1dc54c46f981b4395b71c2dbbfd7b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 25c89da81a6b56f4d842d7a81618700f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _LevelToLoad: RubenScene
 --- !u!1 &1691611515475353939
 GameObject:
   m_ObjectHideFlags: 0
