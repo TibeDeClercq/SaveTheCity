@@ -4871,7 +4871,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: GoodCar
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 531082643, guid: bdc9f5fb340d7684c98f4689fbb2d8fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdc9f5fb340d7684c98f4689fbb2d8fb, type: 3}
 --- !u!1 &7380163937336412028 stripped
 GameObject:
@@ -4896,19 +4897,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.7, z: 2}
   m_Center: {x: 0, y: 0.3, z: 0}
---- !u!114 &1651612613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7380163937336412028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d70cfdce2b0a8d4193075a78d019dfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 0}
-  points: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: 7782dd90282e36e448f9f60ed84d7400, type: 3}
-  explosionParticle: {fileID: 5871053675212571366, guid: 009c28201f2654e4e930600d6d19519f, type: 3}

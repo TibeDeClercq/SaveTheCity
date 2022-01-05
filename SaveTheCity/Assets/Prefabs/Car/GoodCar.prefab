@@ -74,12 +74,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1646981259178978, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
   m_PrefabInstance: {fileID: 8039260478505069481}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8034559912833174779 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4870167790249810, guid: 2dc42346e5313b34c93d598a61994629, type: 3}
-  m_PrefabInstance: {fileID: 8039260478505069481}
+--- !u!114 &2521477448628135294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &531082643
+  m_GameObject: {fileID: 8040307575637809227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d70cfdce2b0a8d4193075a78d019dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  points: {fileID: 0}
+  audioClip: {fileID: 0}
+  explosionParticle: {fileID: 0}
+--- !u!114 &1251554089196976745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,10 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 0}
-  lookAheadForTargetOffset: 0.19
+  lookAheadForTargetOffset: 5
   lookAheadForTargetFactor: 0.1
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
   progressStyle: 0
   pointToPointThreshold: 4
-  target: {fileID: 8034559912833174779}
+  target: {fileID: 0}
