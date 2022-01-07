@@ -13,6 +13,8 @@ public class MyGameManager : MonoBehaviour
     public GameObject victoryCanvas;
     public GameObject pauseCanvas;
 
+    public AudioSource VictorySound;
+
     public Text PointsText;
     public float MaxPoints;
     public static float points;
@@ -48,7 +50,8 @@ public class MyGameManager : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Escape))
                     gameState = GameStates.Pause;
                 if (points >= MaxPoints)
-                {                    
+                {
+                    VictorySound.Play();
                     gameState = GameStates.Victory;
                 }
                 break;
