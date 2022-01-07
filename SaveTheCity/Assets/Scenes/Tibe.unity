@@ -48326,6 +48326,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1470594444}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
+      propertyPath: VictorySound
+      value: 
+      objectReference: {fileID: 463101575}
+    - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: GameOverSound
       value: 
       objectReference: {fileID: 1543197934}
