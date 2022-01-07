@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3669557367380565722}
   - component: {fileID: 454014481102309394}
   - component: {fileID: -1284359874452994178}
-  - component: {fileID: -8093305204941449916}
+  - component: {fileID: 5015694760574710234}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Projectile
@@ -64,7 +64,7 @@ CapsuleCollider:
   m_Height: 7
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-8093305204941449916
+--- !u!114 &5015694760574710234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
