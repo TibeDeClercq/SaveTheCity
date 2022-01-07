@@ -66,6 +66,7 @@ public class MyGameManager : MonoBehaviour
                 FirstPersonController.isWalking = false;
                 break;
             case GameStates.Victory:
+                Debug.Log("Changed to victory state");
                 Destroy(Player.GetComponent<Shoot>());
                 Player.GetComponent<CharacterController>().enabled = false;
                 Cursor.visible = true;

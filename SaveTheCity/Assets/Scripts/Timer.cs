@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public Text TimerText;
     public static float TimerValue;
 
+    public AudioSource GameOverSound;
+
     private int total;
     private int minutes;
     private int seconds;
@@ -38,6 +40,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
+                GameOverSound.Play();
                 MyGameManager.gameState = MyGameManager.GameStates.Gameover;
             }
         }
