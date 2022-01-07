@@ -8,6 +8,7 @@ public class ButtonLevel : MonoBehaviour
     public string _LevelToLoad;
     public void LoadLevel()
     {
+        MyGameManager.points = 0;
         SceneManager.LoadScene(_LevelToLoad);
     }
 }

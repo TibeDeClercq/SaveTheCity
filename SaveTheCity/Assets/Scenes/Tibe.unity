@@ -47163,7 +47163,7 @@ PrefabInstance:
       objectReference: {fileID: 925108758}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: MaxPoints
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2279641936103352367, guid: d2e30dfc254165e4d84ee27a5b4ae49e, type: 3}
       propertyPath: PointsText
