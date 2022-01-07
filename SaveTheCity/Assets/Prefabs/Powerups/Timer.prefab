@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59fb1a11089952f4cae9b5676220125c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freezeSeconds: 5
+  freezeSeconds: 10
   child: {fileID: 2152024603974766169}
 --- !u!1001 &2151437672314792967
 PrefabInstance:
