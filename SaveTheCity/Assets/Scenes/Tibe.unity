@@ -1732,7 +1732,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 682931964, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
       propertyPath: StartTime
-      value: 10
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1491071405541626138, guid: 1afcb2fdb95f85c4396ece2fd9ddc18a, type: 3}
       propertyPath: m_Pivot.x
