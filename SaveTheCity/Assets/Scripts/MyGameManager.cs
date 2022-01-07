@@ -40,8 +40,6 @@ public class MyGameManager : MonoBehaviour
         switch (gameState)
         {
             case GameStates.Playing:
-                NewWaypointProgressTracker.isDriving = true;
-                Timer.IsActive = true;
                 mainCanvas.SetActive(true);
                 victoryCanvas.SetActive(false);
                 gameOverCanvas.SetActive(false);
