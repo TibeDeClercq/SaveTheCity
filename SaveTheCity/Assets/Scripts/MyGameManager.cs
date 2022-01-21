@@ -18,8 +18,6 @@ public class MyGameManager : MonoBehaviour
     public Text PointsText;
     public float MaxPoints;
     public static float points;
-    
-
     public enum GameStates //pauze toevoegen
     {
         Playing, Gameover, Victory, Pause
@@ -65,7 +63,6 @@ public class MyGameManager : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
                 Player.GetComponent<FirstPersonController>().enabled = false;
-                //Player.GetComponent<CreateCamera>().enabled = true;
                 FirstPersonController.isWalking = false;
                 break;
             case GameStates.Victory:
